@@ -1,22 +1,21 @@
 //
-//  FlowCoordinator .swift
+//  Coordinator.swift
 //  App rocketseat
 //
-//  Created by Karina on 10/12/24.
+//  Created by Karina on 11/12/24.
 //
 
 import UIKit
 
-class FlowCoordinator {
+class NearbyFlowController {
     private var navigationController : UINavigationController?
     
     public init() {
         
     }
     
-    func start() -> UIViewController? {
-        let startViewController = UIViewController()
-        startViewController.view.backgroundColor = .red
+    func start() -> UINavigationController? {
+        let startViewController = SplashViewController()
         
         self.navigationController = UINavigationController(rootViewController: startViewController)
         
