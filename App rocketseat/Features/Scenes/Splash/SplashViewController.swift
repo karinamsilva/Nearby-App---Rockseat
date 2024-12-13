@@ -11,8 +11,11 @@ class SplashViewController: UIViewController {
     
     let contentView: SplashView
     
-    init(contentView: SplashView) {
+    weak var delegate: SplashFlowDelegate?
+    
+    init(contentView: SplashView, delegate: SplashFlowDelegate?) {
         self.contentView = contentView
+        self.delegate = delegate
         super.init(nibName: nil, bundle: nil)
         
     }
@@ -24,6 +27,7 @@ class SplashViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setup()
+        decideFlow()
     }
     
     private func setup() {
@@ -34,13 +38,14 @@ class SplashViewController: UIViewController {
     }
     
     private func setupConstraints() {
-        contentView.translatesAutoresizingMaskIntoConstraints = false
-        NSLayoutConstraint.activate([
-            contentView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
-            contentView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
-            contentView.topAnchor.constraint(equalTo: view.topAnchor),
-            contentView.bottomAnchor.constraint(equalTo: view.bottomAnchor)
-        ])
+        self.setupContentViewToController(content: contentView)
+   
+    }
+    
+    private func decideFlow() {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1.5) { [weak self] in
+            self?.delegate?.decideNavigationFlow()
+        }
     }
     
     
