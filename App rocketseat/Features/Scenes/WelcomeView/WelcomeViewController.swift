@@ -11,9 +11,15 @@ class WelcomeViewController: UIViewController {
     
     let contentView: WelcomeView
     
+    weak var delegate: WelcomeFlowDelegate?
+    
     init(contentView: WelcomeView) {
         self.contentView = contentView
         super.init(nibName: nil, bundle: nil)
+        
+        contentView.didTapButton = { [weak self] in
+            self?.delegate?.goToHome()
+        }
     }
     
     required init?(coder: NSCoder) {

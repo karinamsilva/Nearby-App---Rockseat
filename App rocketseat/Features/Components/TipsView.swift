@@ -13,12 +13,13 @@ class TipsView: UIView {
         let image = UIImageView()
         image.translatesAutoresizingMaskIntoConstraints = false
         image.contentMode = .scaleAspectFit
+        image.tintColor = Colors.redBase
         return image
     }()
     
     private let titleLabel: UILabel = {
         let label = UILabel()
-        label.font = Typography.titleSM
+        label.font = Typography.titleMD
         label.numberOfLines = .zero
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
@@ -35,9 +36,7 @@ class TipsView: UIView {
     init(icon: UIImage, title: String, description: String) {
         super.init(frame: .zero)
         setupUI()
-        setupConstraints()
         setupComponents(icon: icon, title: title, description: description)
-        
     }
     
     required init?(coder: NSCoder) {
@@ -54,14 +53,16 @@ class TipsView: UIView {
         self.addSubview(iconImageview)
         self.addSubview(titleLabel)
         self.addSubview(descriptionLabel)
+        
+        setupConstraints()
     }
     
     private func setupConstraints() {
         NSLayoutConstraint.activate([
             iconImageview.leadingAnchor.constraint(equalTo: leadingAnchor),
             iconImageview.topAnchor.constraint(equalTo: topAnchor),
-            iconImageview.heightAnchor.constraint(equalToConstant: 24),
-            iconImageview.widthAnchor.constraint(equalToConstant: 24),
+            iconImageview.heightAnchor.constraint(equalToConstant: 32),
+            iconImageview.widthAnchor.constraint(equalToConstant: 32),
             
             titleLabel.leadingAnchor.constraint(equalTo: iconImageview.trailingAnchor, constant: 16),
             titleLabel.topAnchor.constraint(equalTo: iconImageview.topAnchor),
@@ -69,12 +70,8 @@ class TipsView: UIView {
             
             descriptionLabel.leadingAnchor.constraint(equalTo: titleLabel.leadingAnchor),
             descriptionLabel.topAnchor.constraint(equalTo: titleLabel.bottomAnchor, constant: 4),
-            descriptionLabel.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -6),
+            descriptionLabel.trailingAnchor.constraint(equalTo: trailingAnchor),
             descriptionLabel.bottomAnchor.constraint(equalTo: bottomAnchor)
         ])
-        
     }
-    
-    
-    
 }

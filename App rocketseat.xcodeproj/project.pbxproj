@@ -16,12 +16,17 @@
 		84945D842D0CB769009F0808 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84945D832D0CB769009F0808 /* HomeView.swift */; };
 		84945D862D0CB785009F0808 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84945D852D0CB785009F0808 /* HomeViewController.swift */; };
 		84945D892D0CB7D2009F0808 /* PlaceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84945D882D0CB7D2009F0808 /* PlaceTableViewCell.swift */; };
-		84945D8C2D0CBC34009F0808 /* PlaceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84945D8B2D0CBC34009F0808 /* PlaceModel.swift */; };
+		84945D8C2D0CBC34009F0808 /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84945D8B2D0CBC34009F0808 /* Place.swift */; };
+		84945D8E2D0CC5C8009F0808 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84945D8D2D0CC5C8009F0808 /* Category.swift */; };
+		84945D912D0CC609009F0808 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84945D902D0CC609009F0808 /* HomeViewModel.swift */; };
+		84945D932D0CD057009F0808 /* PlaceAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84945D922D0CD057009F0808 /* PlaceAnnotation.swift */; };
+		84945D952D0DE76E009F0808 /* UIButton+EXT.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84945D942D0DE76E009F0808 /* UIButton+EXT.swift */; };
+		84945D992D0E3B74009F0808 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84945D982D0E3B73009F0808 /* Assets.xcassets */; };
+		84945D9C2D0E4166009F0808 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84945D9B2D0E4165009F0808 /* DetailViewController.swift */; };
+		84945D9E2D0E51A6009F0808 /* WelcomeFlowDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84945D9D2D0E51A6009F0808 /* WelcomeFlowDelegate.swift */; };
 		849AB7552D08CBAB0015BA3E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849AB7542D08CBAB0015BA3E /* AppDelegate.swift */; };
 		849AB7572D08CBAB0015BA3E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849AB7562D08CBAB0015BA3E /* SceneDelegate.swift */; };
 		849AB7592D08CBAB0015BA3E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849AB7582D08CBAB0015BA3E /* ViewController.swift */; };
-		849AB75E2D08CBAF0015BA3E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 849AB75D2D08CBAF0015BA3E /* Assets.xcassets */; };
-		849AB7612D08CBAF0015BA3E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 849AB75F2D08CBAF0015BA3E /* LaunchScreen.storyboard */; };
 		84CDFAC32D0BCDD200E8C8DC /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84CDFAC22D0BCDD100E8C8DC /* WelcomeViewController.swift */; };
 		84CDFAC62D0C96DF00E8C8DC /* UIViewController+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84CDFAC52D0C96DF00E8C8DC /* UIViewController+Ext.swift */; };
 		84CDFAC82D0C989600E8C8DC /* SplashFlowDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84CDFAC72D0C989600E8C8DC /* SplashFlowDelegate.swift */; };
@@ -38,13 +43,18 @@
 		84945D832D0CB769009F0808 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		84945D852D0CB785009F0808 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		84945D882D0CB7D2009F0808 /* PlaceTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceTableViewCell.swift; sourceTree = "<group>"; };
-		84945D8B2D0CBC34009F0808 /* PlaceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceModel.swift; sourceTree = "<group>"; };
+		84945D8B2D0CBC34009F0808 /* Place.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
+		84945D8D2D0CC5C8009F0808 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		84945D902D0CC609009F0808 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		84945D922D0CD057009F0808 /* PlaceAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceAnnotation.swift; sourceTree = "<group>"; };
+		84945D942D0DE76E009F0808 /* UIButton+EXT.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+EXT.swift"; sourceTree = "<group>"; };
+		84945D982D0E3B73009F0808 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../../../Downloads/Resource/Assets.xcassets; sourceTree = "<group>"; };
+		84945D9B2D0E4165009F0808 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		84945D9D2D0E51A6009F0808 /* WelcomeFlowDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeFlowDelegate.swift; sourceTree = "<group>"; };
 		849AB7512D08CBAB0015BA3E /* App rocketseat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "App rocketseat.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		849AB7542D08CBAB0015BA3E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		849AB7562D08CBAB0015BA3E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		849AB7582D08CBAB0015BA3E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		849AB75D2D08CBAF0015BA3E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		849AB7602D08CBAF0015BA3E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		849AB7622D08CBAF0015BA3E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		84CDFAC22D0BCDD100E8C8DC /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		84CDFAC52D0C96DF00E8C8DC /* UIViewController+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Ext.swift"; sourceTree = "<group>"; };
@@ -76,6 +86,7 @@
 			children = (
 				84350B712D0BAA8200BBFF76 /* WelcomeView.swift */,
 				84CDFAC22D0BCDD100E8C8DC /* WelcomeViewController.swift */,
+				84945D9D2D0E51A6009F0808 /* WelcomeFlowDelegate.swift */,
 			);
 			path = WelcomeView;
 			sourceTree = "<group>";
@@ -130,6 +141,7 @@
 		846AB1922D0A0E17007DFC25 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				84945D9A2D0E413E009F0808 /* DetailView */,
 				84945D822D0CB758009F0808 /* HomeView */,
 				84350B702D0BAA6400BBFF76 /* WelcomeView */,
 				84350B732D0BAAF200BBFF76 /* Splash */,
@@ -140,6 +152,7 @@
 		84945D822D0CB758009F0808 /* HomeView */ = {
 			isa = PBXGroup;
 			children = (
+				84945D8F2D0CC5F5009F0808 /* ViewModel */,
 				84945D872D0CB7B9009F0808 /* TableViewCell */,
 				84945D832D0CB769009F0808 /* HomeView.swift */,
 				84945D852D0CB785009F0808 /* HomeViewController.swift */,
@@ -158,9 +171,27 @@
 		84945D8A2D0CBC17009F0808 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				84945D8B2D0CBC34009F0808 /* PlaceModel.swift */,
+				84945D8B2D0CBC34009F0808 /* Place.swift */,
+				84945D8D2D0CC5C8009F0808 /* Category.swift */,
+				84945D922D0CD057009F0808 /* PlaceAnnotation.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		84945D8F2D0CC5F5009F0808 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				84945D902D0CC609009F0808 /* HomeViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		84945D9A2D0E413E009F0808 /* DetailView */ = {
+			isa = PBXGroup;
+			children = (
+				84945D9B2D0E4165009F0808 /* DetailViewController.swift */,
+			);
+			path = DetailView;
 			sourceTree = "<group>";
 		};
 		849AB7482D08CBAB0015BA3E = {
@@ -182,13 +213,12 @@
 		849AB7532D08CBAB0015BA3E /* App rocketseat */ = {
 			isa = PBXGroup;
 			children = (
-				846AB1912D0A0E04007DFC25 /* Features */,
+				84945D982D0E3B73009F0808 /* Assets.xcassets */,
+				849AB7622D08CBAF0015BA3E /* Info.plist */,
 				849AB7542D08CBAB0015BA3E /* AppDelegate.swift */,
 				849AB7562D08CBAB0015BA3E /* SceneDelegate.swift */,
 				849AB7582D08CBAB0015BA3E /* ViewController.swift */,
-				849AB75D2D08CBAF0015BA3E /* Assets.xcassets */,
-				849AB75F2D08CBAF0015BA3E /* LaunchScreen.storyboard */,
-				849AB7622D08CBAF0015BA3E /* Info.plist */,
+				846AB1912D0A0E04007DFC25 /* Features */,
 				846AB18C2D09F7B7007DFC25 /* Sources */,
 			);
 			path = "App rocketseat";
@@ -198,6 +228,7 @@
 			isa = PBXGroup;
 			children = (
 				84CDFAC52D0C96DF00E8C8DC /* UIViewController+Ext.swift */,
+				84945D942D0DE76E009F0808 /* UIButton+EXT.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -260,8 +291,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				849AB7612D08CBAF0015BA3E /* LaunchScreen.storyboard in Resources */,
-				849AB75E2D08CBAF0015BA3E /* Assets.xcassets in Resources */,
+				84945D992D0E3B74009F0808 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,38 +302,33 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84945D912D0CC609009F0808 /* HomeViewModel.swift in Sources */,
 				849AB7592D08CBAB0015BA3E /* ViewController.swift in Sources */,
 				84945D842D0CB769009F0808 /* HomeView.swift in Sources */,
-				84945D8C2D0CBC34009F0808 /* PlaceModel.swift in Sources */,
+				84945D8C2D0CBC34009F0808 /* Place.swift in Sources */,
 				846AB18F2D09F8E5007DFC25 /* Colors.swift in Sources */,
 				84CDFAC62D0C96DF00E8C8DC /* UIViewController+Ext.swift in Sources */,
+				84945D8E2D0CC5C8009F0808 /* Category.swift in Sources */,
 				84CDFAC32D0BCDD200E8C8DC /* WelcomeViewController.swift in Sources */,
 				84945D862D0CB785009F0808 /* HomeViewController.swift in Sources */,
 				84CDFAC82D0C989600E8C8DC /* SplashFlowDelegate.swift in Sources */,
 				846AB1962D0A0EBA007DFC25 /* SplashViewController.swift in Sources */,
+				84945D9C2D0E4166009F0808 /* DetailViewController.swift in Sources */,
 				849AB7552D08CBAB0015BA3E /* AppDelegate.swift in Sources */,
+				84945D932D0CD057009F0808 /* PlaceAnnotation.swift in Sources */,
 				84350B722D0BAA8200BBFF76 /* WelcomeView.swift in Sources */,
 				84E2543F2D0A1AC80027ED81 /* NearbyFlowControllerr.swift in Sources */,
 				84945D892D0CB7D2009F0808 /* PlaceTableViewCell.swift in Sources */,
 				84350B6F2D0B9BED00BBFF76 /* TipsView.swift in Sources */,
 				849AB7572D08CBAB0015BA3E /* SceneDelegate.swift in Sources */,
+				84945D952D0DE76E009F0808 /* UIButton+EXT.swift in Sources */,
 				84945D812D0CB04E009F0808 /* Typography.swift in Sources */,
 				846AB1982D0A0F0B007DFC25 /* SplashView.swift in Sources */,
+				84945D9E2D0E51A6009F0808 /* WelcomeFlowDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		849AB75F2D08CBAF0015BA3E /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				849AB7602D08CBAF0015BA3E /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		849AB7632D08CBAF0015BA3E /* Debug */ = {
@@ -430,7 +455,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "App rocketseat/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -456,7 +481,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "App rocketseat/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (

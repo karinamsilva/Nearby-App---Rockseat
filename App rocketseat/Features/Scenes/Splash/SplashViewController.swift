@@ -17,7 +17,6 @@ class SplashViewController: UIViewController {
         self.contentView = contentView
         self.delegate = delegate
         super.init(nibName: nil, bundle: nil)
-        
     }
     
     required init?(coder: NSCoder) {
@@ -39,7 +38,6 @@ class SplashViewController: UIViewController {
     
     private func setupConstraints() {
         self.setupContentViewToController(content: contentView)
-   
     }
     
     private func decideFlow() {
@@ -47,6 +45,4 @@ class SplashViewController: UIViewController {
             self?.delegate?.decideNavigationFlow()
         }
     }
-    
-    
 }
